@@ -19,11 +19,16 @@ class Storage {
     }
 
     addItem(item) {
-    return storage.items.push(item)
+    return this.items.push(item)
    }
 
     removeItem(item) {
-    return storage.items.splice(1,1)
+        for (let i = 0; i < this.items.length; i += 1) {
+            if (this.items[i] === item) {
+            this.items.splice(i,1)
+            }
+        }
+        return this.items;
    }
     
 }
