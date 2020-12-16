@@ -18,12 +18,12 @@ class Storage {
     return this.items;
     }
 
-    addItem() {
-       
+    addItem(item) {
+    return storage.items.push(item)
    }
 
-   removeItem() {
-    
+    removeItem(item) {
+    return storage.items.splice(1,1)
    }
     
 }
