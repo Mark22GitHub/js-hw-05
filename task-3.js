@@ -34,7 +34,6 @@ class Storage {
 }
 
 
-
 const storage = new Storage([
   'Нанитоиды',
   'Пролонгер',
